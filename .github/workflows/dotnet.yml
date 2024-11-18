@@ -20,6 +20,8 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 8.0.x
+    - name: Install Windows Forms Dependencies
+      run: dotnet add package System.Windows.Forms
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
