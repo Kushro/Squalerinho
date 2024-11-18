@@ -19,13 +19,13 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: 8.0.x
+        dotnet-version: 7.0.x
     - name: Add Windows Forms Package
       working-directory: Squalr.Engine.Utils
       run: |
         dotnet add Squalr.Engine.Common.csproj package Microsoft.Windows.Compatibility
-    - name: Restore dependencies
-      run: dotnet restore
+    - name: Restore dependencies (w/ net7 enforcing)
+      run:  dotnet restore --framework net7.0
     - name: Build
       run: dotnet build --no-restore
     - name: Test
