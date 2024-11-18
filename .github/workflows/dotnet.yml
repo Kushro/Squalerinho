@@ -23,7 +23,7 @@ jobs:
     - name: Add Windows Forms Package
       working-directory: Squalr.Engine.Utils
       run: |
-        dotnet add Squalr.Engine.Common.csproj package Microsoft.Windows.Compatibility
+        dotnet add Squalr.Engine.Common.csproj package Microsoft.Windows.Compatibility --version 7.x
     - name: Restore dependencies (w/ net7 enforcing)
       run:  dotnet restore --force-evaluate
     - name: Build
