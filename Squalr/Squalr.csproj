@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
     <TargetFramework>net7.0-windows</TargetFramework>
     <LangVersion>latest</LangVersion>
     <UseWPF>true</UseWPF>
