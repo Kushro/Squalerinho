@@ -20,6 +20,8 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 7.0.x
+    - name: Add Windows Forms Package
+      run: dotnet add Squalr.Engine.Utils/Squalr.Engine.Common.csproj package Microsoft.Windows.Compatibility --version 7.0.2
     - name: Restore dependencies (w/ net7 enforcing)
       run:  dotnet restore
     - name: Build
