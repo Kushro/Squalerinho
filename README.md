@@ -157,12 +157,6 @@ private void CodeTraceEvent(CodeTraceInfo codeTraceInfo)
 }
 ```
 	
-## Recommended Visual Studio Extensions
-Reference | Description 
---- | ---
-[XAML Formatter](https://marketplace.visualstudio.com/items?itemName=TeamXavalon.XAMLStyler) | XAML should be run through this formatter
-[StyleCop](https://marketplace.visualstudio.com/items?itemName=ChrisDahlberg.StyleCop) | StyleCop to enforce code conventions. Note that we deviate on some standard conventions. We use the full type name for variables (ex Int32 rather than int). The reasoning is that this is a memory editor, so we prefer to use the type name that is most explicit to avoid coding mistakes.
-
 ## Build
 
 In order to compile Squalr, you should only need **Visual Studio 2017**. This should be up to date, we frequently update Squalr to use the latest version of the .NET framework. Here are the important 3rd party libraries that this project uses:
